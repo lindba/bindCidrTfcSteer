@@ -1,0 +1,14 @@
+; /etc/named/reg2.cloud
+$TTL 3D
+@               IN      SOA     bind.cloud. hdb1.bind.cloud (
+                                1       ; Serial
+                                8H      ; Refresh
+                                2H      ; Retry
+                                4W      ; Expire
+                                1D)     ; Minimum TTL
+
+                NS      bind              ; Inet Address of name server
+;
+localhost       A       127.0.0.1
+bind            A       10.244.0.134
+eg  A  10.5.0.25
